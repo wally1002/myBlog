@@ -1,1 +1,1 @@
-Sitemap: wally1002.github.io/blog/sitemap.xml
+Sitemap: wally1002.github.io/myBlog/sitemap.xml

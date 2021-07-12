@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>wally1002.github.io/blog/</loc>
+<loc>wally1002.github.io/myBlog/tech/Move-the-turtle/</loc>
+<lastmod>2021-07-12T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>wally1002.github.io/myBlog/about/</loc>
+<lastmod>2021-05-11T19:53:16+05:30</lastmod>
+</url>
+<url>
+<loc>wally1002.github.io/myBlog/</loc>
 </url>
 </urlset>
