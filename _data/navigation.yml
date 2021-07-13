@@ -4,7 +4,7 @@ main:
     url: /about
   - title: "Tech"
     url: /tech/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Cinema"
+    url: /cinema/
+  # - title: "Cricket"
+  #   url: /cricket/
