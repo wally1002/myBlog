@@ -1,3 +1,13 @@
+---
+title: "Turtlesim"
+categories:
+  - tech
+tags:
+  - Python
+  - Robotics
+  - ROS
+classes: wide
+---
 ## Turtlesim
 
 We now  understand the core ideas discussed in the previous post using a 2D simulator called Turtlesim. We will explore the ideas of topics, messages and nodes. Let's get started. 
