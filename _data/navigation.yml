@@ -6,5 +6,16 @@ main:
     url: /tech/
   - title: "Cinema"
     url: /cinema/
-  # - title: "Cricket"
-  #   url: /cricket/
+  - title: "Cricket"
+    url: /cricket/
+
+ros:
+  - title: ROS Basics
+    children:
+      - title: "ROS"
+        url: /tech/ROS/
+      - title: "Turtlesim"
+        url: /tech/Turtlesim/
+      - title: "Simulation"
+        url: /tech/Movetheturtle/
+  

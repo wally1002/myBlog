@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="wally1002.github.io/myBlog/feed.xml" rel="self" type="application/atom+xml" /><link href="wally1002.github.io/myBlog/" rel="alternate" type="text/html" /><updated>2021-07-13T08:43:41+05:30</updated><id>wally1002.github.io/myBlog/feed.xml</id><title type="html">Interstellar</title><subtitle>My Blog.</subtitle><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><entry><title type="html">Move the turtle</title><link href="wally1002.github.io/myBlog/tech/Move-the-turtle/" rel="alternate" type="text/html" title="Move the turtle" /><published>2021-07-12T00:00:00+05:30</published><updated>2021-07-12T00:00:00+05:30</updated><id>wally1002.github.io/myBlog/tech/Move%20the%20turtle</id><content type="html" xml:base="wally1002.github.io/myBlog/tech/Move-the-turtle/">&lt;h2 id=&quot;move-the-turtle&quot;&gt;Move the turtle&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="wally1002.github.io/myBlog/feed.xml" rel="self" type="application/atom+xml" /><link href="wally1002.github.io/myBlog/" rel="alternate" type="text/html" /><updated>2021-07-19T13:15:54+05:30</updated><id>wally1002.github.io/myBlog/feed.xml</id><title type="html">Interstellar</title><subtitle>My Blog.</subtitle><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><entry><title type="html">Move the turtle</title><link href="wally1002.github.io/myBlog/tech/Movetheturtle/" rel="alternate" type="text/html" title="Move the turtle" /><published>2021-07-12T00:00:00+05:30</published><updated>2021-07-12T00:00:00+05:30</updated><id>wally1002.github.io/myBlog/tech/Movetheturtle</id><content type="html" xml:base="wally1002.github.io/myBlog/tech/Movetheturtle/">&lt;h2 id=&quot;move-the-turtle&quot;&gt;Move the turtle&lt;/h2&gt;
 
 &lt;p&gt;In the previous post we controlled the turtle using our keys, but we may want to automate this process by writing a piece of code which tells the turtle to move in a specified manner. There are 2 ways of controlling it using code. One is through command line using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic pub&lt;/code&gt; and other is using a python/c++ code. We will start with the command line one.&lt;/p&gt;
 
@@ -259,4 +259,161 @@ The above $V_x$ and $\omega_z$ are calculated using &lt;code class=&quot;languag
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/move2goal.gif?raw=true&quot; alt=&quot;move2goal&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So that is it. This is how we can control a robot in simulator using code. I tried to split everything into modules and asses them individually. So if you have any doubts you can ping me anytime!.&lt;/p&gt;</content><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><category term="tech" /><category term="Python" /><category term="Robotics" /><category term="ROS" /><summary type="html">Move the turtle</summary></entry></feed>
+&lt;p&gt;So that is it. This is how we can control a robot in simulator using code. I tried to split everything into modules and asses them individually. So if you have any doubts you can ping me anytime!.&lt;/p&gt;</content><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><category term="tech" /><category term="Python" /><category term="Robotics" /><category term="ROS" /><summary type="html">Move the turtle</summary></entry><entry><title type="html">Turtlesim</title><link href="wally1002.github.io/myBlog/tech/Turtlesim/" rel="alternate" type="text/html" title="Turtlesim" /><published>2021-07-11T00:00:00+05:30</published><updated>2021-07-11T00:00:00+05:30</updated><id>wally1002.github.io/myBlog/tech/Turtlesim</id><content type="html" xml:base="wally1002.github.io/myBlog/tech/Turtlesim/">&lt;h2 id=&quot;turtlesim&quot;&gt;Turtlesim&lt;/h2&gt;
+
+&lt;p&gt;We now  understand the core ideas discussed in the previous post using a 2D simulator called Turtlesim. We will explore the ideas of topics, messages and nodes. Let’s get started.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/turtlesim.png?raw=true&quot; alt=&quot;startTsim&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;getting-started-with-turtlesim&quot;&gt;Getting started with Turtlesim&lt;/h3&gt;
+
+&lt;p&gt;Turtlesim is a package which is included in ROS. So to use the Turtlesim we first need to start ROS. To start ROS we use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roscore&lt;/code&gt; which starts all necessary processes for ROS. So open a new terminal and type in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roscore&lt;/code&gt;. Then to start the the turtlesim node we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun turtlesim turtlesim_node&lt;/code&gt; in a new terminal. The structure of this command is such that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun &amp;lt;package name&amp;gt; &amp;lt;node name&amp;gt;&lt;/code&gt;. Here our package is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlesim&lt;/code&gt; and node is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlesim_node&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Run the following commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roscore&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In a new terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun turtlesim turtlesim_node&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/startTsim.gif?raw=true&quot; alt=&quot;startTsim&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;move-the-turtle&quot;&gt;Move the Turtle!&lt;/h3&gt;
+
+&lt;p&gt;Now that we have our turtle ready, next step will be to move it. We can control the turtle using our keyboard keys by starting another rosnode named  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtle_teleop_key&lt;/code&gt;. We need to have two terminals from the previous section running to control the turtle.&lt;/p&gt;
+
+&lt;p&gt;In a new terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun turtlesim turtle_teleop_key&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/teleop.gif?raw=true&quot; alt=&quot;teleop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we can see we can move the turtle seamlessly in the simulator. We could also see that whenever turtle hits a wall it sends a message in the other terminal. And to control the turtle the cursor must be on the 3rd terminal that is where we ran our control node. So what’s happening under the hood? How is the turtle moving? Here is where we use RQT graph to know what’s going on.&lt;/p&gt;
+
+&lt;h3 id=&quot;understanding-rqt-graphs&quot;&gt;Understanding RQT Graphs&lt;/h3&gt;
+
+&lt;p&gt;RQT graphs give an overview of our nodes, topics and how they are connected. You can start a rqt_graph using simple rosrun command like the previous cases. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun rqt_graph rqt_graph&lt;/code&gt; starts a window where we can see the nodes and topics.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/rqt_graph.png?raw=true&quot; alt=&quot;rqt_graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here oval shape means a node and box means a topic. so we used two nodes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlesim&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;teleop_turtle&lt;/code&gt;(these we ran using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosrun&lt;/code&gt; in previous sections). Here blue means it’s sending messages to a topic and green meaning it is receiving messages from a topic. the intermediary in the red is our topic. It is taking commands from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;teleop_turtle&lt;/code&gt;(our keyboard keys) and sending it out to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlesim&lt;/code&gt;(simulator). Nodes which send data to a topic are called &lt;strong&gt;Publishers&lt;/strong&gt; and which take data are called &lt;strong&gt;Subscribers&lt;/strong&gt;. So what is this weird &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtle1/cmd_vel&lt;/code&gt; name for the topic? how to look into the data published into this topic? Let’s dive into rostopics…&lt;/p&gt;
+
+&lt;h3 id=&quot;into-the-rostopics&quot;&gt;Into the rostopics&lt;/h3&gt;
+
+&lt;p&gt;So first we may want to list all the rostopics which are running. For this we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic list&lt;/code&gt;, this gives us a list of rostopics running currently. So now we got the list we may want to see from where a specific topic(here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/turtle1/cmd_vel&lt;/code&gt;) is receiving data and where is it sending. Here we use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic info &amp;lt;topic name&amp;gt;&lt;/code&gt; . For our case this command would be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic info /turtle1/cmd_vel&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/rostopic_info.gif?raw=true&quot; alt=&quot;rostopic_info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So we now see some weird names in the list of rostopics. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosout&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosout_agg&lt;/code&gt; are created when we run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;roscore&lt;/code&gt;. They handle some functionality of ROS which is not very useful for us. The other 3 topics are of importance for us. As we were looking at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/turtle1/cmd_vel&lt;/code&gt; we find out it’s info. In the info we can see 3 main sections. Type, Publishers and Subscribers. Here type is the message type of the topic. As we already noted from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rqt_graph&lt;/code&gt; the publisher is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;teleop_turtle&lt;/code&gt; and the subscriber is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;turtlesim&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we may want to inspect the data itself which is being published into the topics. For this we have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic echo &amp;lt;topic name&amp;gt;&lt;/code&gt; and in our case it is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic echo /turtle1/cmd_vel&lt;/code&gt;. You can note from the GIF that after we give an input through our keyboard we get ourselves data in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic echo&lt;/code&gt;. The data we see is the velocity of the turtle in 6DOF(Degrees Of Freedom). We gave a command to move the turtle forward we can see it only has linear velocity in x-direction. We will discuss this more later.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/rostopic_echo.gif?raw=true&quot; alt=&quot;rostopic_echo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have observed a pattern here. To get anything related to a rostopic we are just using list, info, echo after it. This also applies for nodes, messages and others also.&lt;/p&gt;
+
+&lt;p&gt;In the next post we will look into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rostopic pub&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/turtle1/pose&lt;/code&gt; topic and write a script to move the turtle to a given position from a python code…………..s&lt;/p&gt;</content><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><category term="tech" /><category term="Python" /><category term="Robotics" /><category term="ROS" /><summary type="html">Turtlesim</summary></entry><entry><title type="html">ROS</title><link href="wally1002.github.io/myBlog/tech/ROS/" rel="alternate" type="text/html" title="ROS" /><published>2021-07-10T00:00:00+05:30</published><updated>2021-07-10T00:00:00+05:30</updated><id>wally1002.github.io/myBlog/tech/ROS</id><content type="html" xml:base="wally1002.github.io/myBlog/tech/ROS/">&lt;h1 id=&quot;robotics&quot;&gt;Robotics&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Robotics is a very interesting word in itself. When you google Robot it says “Machine resembling human or replicating some human functions”. We human’s are ourselves very complex both biologically and psychologically. Yet we want to replicate something we don’t fully understand yet. For me this is where Robotics and AI stands out . With an aspiration of unknown magnitude and a limited understanding, researchers set out to unravel the Human form into Robots.&lt;/p&gt;
+
+&lt;p&gt;So I think that should be quite a good intro. I will now move from philosophical things into the technical things. I want these posts to cover a lot of things like &lt;em&gt;Electronics, ML/ DL, Robotics&lt;/em&gt;. I will start off with ROS(Robot Operating System) and some small simulations, then move on to some other stuff. So let’s get going.&lt;/p&gt;
+
+&lt;h2 id=&quot;ros&quot;&gt;ROS&lt;/h2&gt;
+
+&lt;p&gt;ROS is a pseudo-operating system created to handle complex robots with many functions. ROS provides us with an interface to design modular systems with different functions. ROS is essentially a communication framework. Why ROS? This was the question I asked myself when I couldn’t find my way around ROS. Why? cause ROS lets us communicate between different nodes or codes written in different language for different devices. ROS unifies this process of communication. So let’s start with installing ROS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/logo_ros.jpg?raw=true&quot; alt=&quot;logo_ros&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-ros&quot;&gt;Installing ROS&lt;/h3&gt;
+
+&lt;p&gt;These instructions are only for Ubuntu 18.04 LTS operating system. You can dual-boot your system or run a virtual machine but prefer the former. We will be using ROS Melodic-Morenia. All the instructions can be found in official &lt;a href=&quot;http://wiki.ros.org/melodic/Installation/Ubuntu&quot;&gt;ROS website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Open a terminal and copy paste these sequentially and enter the password when needed. You will get to know everything as we move forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo sh -c 'echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &amp;gt; /etc/apt/sources.list.d/ros-latest.list'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt install ros-melodic-desktop-full&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;source /opt/ros/melodic/setup.bash&quot; &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt install python-rosdep&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo rosdep init&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rosdep update&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So as the installation is out of the way let’s get into core of the ROS.&lt;/p&gt;
+
+&lt;h3 id=&quot;building-blocks-of-ros&quot;&gt;Building Blocks of ROS&lt;/h3&gt;
+
+&lt;p&gt;ROS is about sending and receiving data. So it is maintained by three main structures, Nodes, Topics and Messages. The below figure illustrates how these are connected.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/core_ros.png?raw=true&quot; alt=&quot;image-20210509212618969&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ROS NODES : Nodes are simply some code which needs data from other sources or generates data which needs to be sent to other nodes. For example camera is source of images, the raw data from sensor is processed on the camera itself and the image is formed. We now need to send the image to the processor so it can save and modify it. Here camera acts as a Node which sends(publishes) the data(image).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ROS MESSAGES : Messages are nothing but data containers. In ROS we have many different types of messages like int, float, image etc. The image data which we need to send from camera acts as a Message of type Image.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ROS TOPICS : Topics are message carriers. So every message we send must go through a topic. So the Image message we need to send must go to a topic of some name(let’s say camera_data). So if we need that image we should write down a Node which takes data from this topic.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This brings us to Packages. Packages are simply a self contained project. Packages can be imported into another package and can be used. So the Nodes you write will be inside a package. Packages are self contained so you cannot nest them or add two packages with same name. Collection of different packages is in turn known as Workspace. So all the packages which we need to be working together should be in same workspace.&lt;/p&gt;
+
+&lt;p&gt;There are many other important terms like Services, Parameters which will come later into the picture, so they can be introduced later. This essentially forms the core of ROS.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-workspace-and-packages&quot;&gt;Creating Workspace and Packages&lt;/h3&gt;
+
+&lt;p&gt;Let’s start by creating a directory . &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir&lt;/code&gt; creates a directory and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; flag specifies that the directory we create is a parent directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir -p catkin_ws&lt;/code&gt;
+Then move inside that directory is using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;. Here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; means change directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd catkin_ws&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Before creating a package we need a directory named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; in the workspace. This is where our packages are managed. 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd catkin_ws&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir src&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin build&lt;/code&gt; to manage our packages. This initialises our workspaces and creates a build and devel space for our packages and build them individually if present.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin build&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we need to source(setup) our workspace and this needs to be done every time we open the terminal. So to decrease our work we but the command into the bashrc file which runs every time we open a terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;source ~/catkin_ws/devel/setup.bash&quot; &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/ws.gif?raw=true&quot; alt=&quot;output&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let’s create a package with name &lt;strong&gt;tutorials&lt;/strong&gt;. For that we use the following command where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin_create_pkg&lt;/code&gt; creates the package named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tutorials&lt;/code&gt; with dependencies on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geometry_msgs&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rospy&lt;/code&gt;. So to create a package we should add the dependencies we require to run the code. Although they can be added and deleted after creating the package by editing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CMakeLists.txt&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.xml&lt;/code&gt;.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd catkin_ws/src&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin_create_pkg tutorials geometry_msgs rospy&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we need a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder in the package created. Then we need to build the package using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin build&lt;/code&gt; similar to the workspace. 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir src&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~/catkin_ws&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin build&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So we have our package ready to go. We can create a scripts folder inside your package to hold our codes. 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~/catkin_ws/src&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir tutorials/scripts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/wally1002/tutorials/blob/main/media/package.gif?raw=true&quot; alt=&quot;package&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think this will be it for this post and let’s look into a simulator called Turtlesim in the next post.&lt;/p&gt;</content><author><name>Sankeerth</name><email>sankeerthreddy1002@gmail.com</email></author><category term="tech" /><category term="Python" /><category term="Robotics" /><category term="ROS" /><summary type="html">Robotics</summary></entry></feed>

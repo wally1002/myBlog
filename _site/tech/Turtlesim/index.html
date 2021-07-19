@@ -1,0 +1,546 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Turtlesim - Interstellar</title>
+<meta name="description" content="Turtlesim">
+
+
+  <meta name="author" content="Sankeerth">
+  
+  <meta property="article:author" content="Sankeerth">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Interstellar">
+<meta property="og:title" content="Turtlesim">
+<meta property="og:url" content="wally1002.github.io/myBlog/tech/Turtlesim/">
+
+
+  <meta property="og:description" content="Turtlesim">
+
+
+
+
+
+  <meta name="twitter:site" content="@wally1002">
+  <meta name="twitter:title" content="Turtlesim">
+  <meta name="twitter:description" content="Turtlesim">
+  <meta name="twitter:url" content="wally1002.github.io/myBlog/tech/Turtlesim/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-11T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="wally1002.github.io/myBlog/tech/Turtlesim/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sankeerth",
+      "url": "wally1002.github.io/myBlog/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/myBlog/feed.xml" type="application/atom+xml" rel="alternate" title="Interstellar Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/myBlog/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/myBlog/"><img src="/myBlog/assets/images/bat.jpg" alt="Interstellar"></a>
+        
+        <a class="site-title" href="/myBlog/">
+          Interstellar
+          <span class="site-subtitle">Travel Ever</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/myBlog/about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/tech/">Tech</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/cinema/">Cinema</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/cricket/">Cricket</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">ROS Basics</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/myBlog/tech/ROS/">ROS</a></li>
+          
+            <li><a href="/myBlog/tech/Turtlesim/" class="active">Turtlesim</a></li>
+          
+            <li><a href="/myBlog/tech/Movetheturtle/">Simulation</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Turtlesim">
+    <meta itemprop="description" content="Turtlesim">
+    <meta itemprop="datePublished" content="2021-07-11T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Turtlesim
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="turtlesim">Turtlesim</h2>
+
+<p>We now  understand the core ideas discussed in the previous post using a 2D simulator called Turtlesim. We will explore the ideas of topics, messages and nodes. Let’s get started.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/turtlesim.png?raw=true" alt="startTsim" /></p>
+
+<h3 id="getting-started-with-turtlesim">Getting started with Turtlesim</h3>
+
+<p>Turtlesim is a package which is included in ROS. So to use the Turtlesim we first need to start ROS. To start ROS we use the command <code class="language-plaintext highlighter-rouge">roscore</code> which starts all necessary processes for ROS. So open a new terminal and type in <code class="language-plaintext highlighter-rouge">roscore</code>. Then to start the the turtlesim node we use <code class="language-plaintext highlighter-rouge">rosrun turtlesim turtlesim_node</code> in a new terminal. The structure of this command is such that <code class="language-plaintext highlighter-rouge">rosrun &lt;package name&gt; &lt;node name&gt;</code>. Here our package is <code class="language-plaintext highlighter-rouge">turtlesim</code> and node is <code class="language-plaintext highlighter-rouge">turtlesim_node</code>.</p>
+
+<p>Run the following commands.</p>
+
+<p><code class="language-plaintext highlighter-rouge">roscore</code></p>
+
+<p>In a new terminal</p>
+
+<p><code class="language-plaintext highlighter-rouge">rosrun turtlesim turtlesim_node</code></p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/startTsim.gif?raw=true" alt="startTsim" /></p>
+
+<h3 id="move-the-turtle">Move the Turtle!</h3>
+
+<p>Now that we have our turtle ready, next step will be to move it. We can control the turtle using our keyboard keys by starting another rosnode named  <code class="language-plaintext highlighter-rouge">turtle_teleop_key</code>. We need to have two terminals from the previous section running to control the turtle.</p>
+
+<p>In a new terminal</p>
+
+<p><code class="language-plaintext highlighter-rouge">rosrun turtlesim turtle_teleop_key</code></p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/teleop.gif?raw=true" alt="teleop" /></p>
+
+<p>As we can see we can move the turtle seamlessly in the simulator. We could also see that whenever turtle hits a wall it sends a message in the other terminal. And to control the turtle the cursor must be on the 3rd terminal that is where we ran our control node. So what’s happening under the hood? How is the turtle moving? Here is where we use RQT graph to know what’s going on.</p>
+
+<h3 id="understanding-rqt-graphs">Understanding RQT Graphs</h3>
+
+<p>RQT graphs give an overview of our nodes, topics and how they are connected. You can start a rqt_graph using simple rosrun command like the previous cases. <code class="language-plaintext highlighter-rouge">rosrun rqt_graph rqt_graph</code> starts a window where we can see the nodes and topics.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/rqt_graph.png?raw=true" alt="rqt_graph" /></p>
+
+<p>Here oval shape means a node and box means a topic. so we used two nodes <code class="language-plaintext highlighter-rouge">turtlesim</code> and <code class="language-plaintext highlighter-rouge">teleop_turtle</code>(these we ran using <code class="language-plaintext highlighter-rouge">rosrun</code> in previous sections). Here blue means it’s sending messages to a topic and green meaning it is receiving messages from a topic. the intermediary in the red is our topic. It is taking commands from the <code class="language-plaintext highlighter-rouge">teleop_turtle</code>(our keyboard keys) and sending it out to the <code class="language-plaintext highlighter-rouge">turtlesim</code>(simulator). Nodes which send data to a topic are called <strong>Publishers</strong> and which take data are called <strong>Subscribers</strong>. So what is this weird <code class="language-plaintext highlighter-rouge">turtle1/cmd_vel</code> name for the topic? how to look into the data published into this topic? Let’s dive into rostopics…</p>
+
+<h3 id="into-the-rostopics">Into the rostopics</h3>
+
+<p>So first we may want to list all the rostopics which are running. For this we use <code class="language-plaintext highlighter-rouge">rostopic list</code>, this gives us a list of rostopics running currently. So now we got the list we may want to see from where a specific topic(here <code class="language-plaintext highlighter-rouge">/turtle1/cmd_vel</code>) is receiving data and where is it sending. Here we use <code class="language-plaintext highlighter-rouge">rostopic info &lt;topic name&gt;</code> . For our case this command would be <code class="language-plaintext highlighter-rouge">rostopic info /turtle1/cmd_vel</code>.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/rostopic_info.gif?raw=true" alt="rostopic_info" /></p>
+
+<p>So we now see some weird names in the list of rostopics. <code class="language-plaintext highlighter-rouge">rosout</code> and <code class="language-plaintext highlighter-rouge">rosout_agg</code> are created when we run <code class="language-plaintext highlighter-rouge">roscore</code>. They handle some functionality of ROS which is not very useful for us. The other 3 topics are of importance for us. As we were looking at <code class="language-plaintext highlighter-rouge">/turtle1/cmd_vel</code> we find out it’s info. In the info we can see 3 main sections. Type, Publishers and Subscribers. Here type is the message type of the topic. As we already noted from the <code class="language-plaintext highlighter-rouge">rqt_graph</code> the publisher is <code class="language-plaintext highlighter-rouge">teleop_turtle</code> and the subscriber is <code class="language-plaintext highlighter-rouge">turtlesim</code>.</p>
+
+<p>Now we may want to inspect the data itself which is being published into the topics. For this we have <code class="language-plaintext highlighter-rouge">rostopic echo &lt;topic name&gt;</code> and in our case it is <code class="language-plaintext highlighter-rouge">rostopic echo /turtle1/cmd_vel</code>. You can note from the GIF that after we give an input through our keyboard we get ourselves data in <code class="language-plaintext highlighter-rouge">rostopic echo</code>. The data we see is the velocity of the turtle in 6DOF(Degrees Of Freedom). We gave a command to move the turtle forward we can see it only has linear velocity in x-direction. We will discuss this more later.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/rostopic_echo.gif?raw=true" alt="rostopic_echo" /></p>
+
+<p>You may have observed a pattern here. To get anything related to a rostopic we are just using list, info, echo after it. This also applies for nodes, messages and others also.</p>
+
+<p>In the next post we will look into <code class="language-plaintext highlighter-rouge">rostopic pub</code>, <code class="language-plaintext highlighter-rouge">/turtle1/pose</code> topic and write a script to move the turtle to a given position from a python code…………..s</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/myBlog/tags/#python" class="page__taxonomy-item" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/myBlog/tags/#robotics" class="page__taxonomy-item" rel="tag">Robotics</a><span class="sep">, </span>
+    
+      <a href="/myBlog/tags/#ros" class="page__taxonomy-item" rel="tag">ROS</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/myBlog/categories/#tech" class="page__taxonomy-item" rel="tag">tech</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-11T00:00:00+05:30">July 11, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=wally1002&text=Turtlesim%20wally1002.github.io%2FmyBlog%2Ftech%2FTurtlesim%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=wally1002.github.io%2FmyBlog%2Ftech%2FTurtlesim%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=wally1002.github.io%2FmyBlog%2Ftech%2FTurtlesim%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/myBlog/tech/ROS/" class="pagination--pager" title="ROS
+">Previous</a>
+    
+    
+      <a href="/myBlog/tech/Movetheturtle/" class="pagination--pager" title="Move the turtle
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/myBlog/assets/images/bat.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myBlog/tech/Movetheturtle/" rel="permalink">Move the turtle
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Move the turtle
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/myBlog/assets/images/bat.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myBlog/tech/ROS/" rel="permalink">ROS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Robotics
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/myBlog/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Sankeerth. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/myBlog/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  </body>
+</html>

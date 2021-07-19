@@ -1,0 +1,595 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>ROS - Interstellar</title>
+<meta name="description" content="Robotics">
+
+
+  <meta name="author" content="Sankeerth">
+  
+  <meta property="article:author" content="Sankeerth">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Interstellar">
+<meta property="og:title" content="ROS">
+<meta property="og:url" content="wally1002.github.io/myBlog/tech/ROS/">
+
+
+  <meta property="og:description" content="Robotics">
+
+
+
+
+
+  <meta name="twitter:site" content="@wally1002">
+  <meta name="twitter:title" content="ROS">
+  <meta name="twitter:description" content="Robotics">
+  <meta name="twitter:url" content="wally1002.github.io/myBlog/tech/ROS/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-10T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="wally1002.github.io/myBlog/tech/ROS/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Sankeerth",
+      "url": "wally1002.github.io/myBlog/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/myBlog/feed.xml" type="application/atom+xml" rel="alternate" title="Interstellar Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/myBlog/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/myBlog/"><img src="/myBlog/assets/images/bat.jpg" alt="Interstellar"></a>
+        
+        <a class="site-title" href="/myBlog/">
+          Interstellar
+          <span class="site-subtitle">Travel Ever</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/myBlog/about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/tech/">Tech</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/cinema/">Cinema</a>
+            </li><li class="masthead__menu-item">
+              <a href="/myBlog/cricket/">Cricket</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">ROS Basics</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/myBlog/tech/ROS/" class="active">ROS</a></li>
+          
+            <li><a href="/myBlog/tech/Turtlesim/">Turtlesim</a></li>
+          
+            <li><a href="/myBlog/tech/Movetheturtle/">Simulation</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="ROS">
+    <meta itemprop="description" content="Robotics">
+    <meta itemprop="datePublished" content="2021-07-10T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">ROS
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="robotics">Robotics</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Robotics is a very interesting word in itself. When you google Robot it says “Machine resembling human or replicating some human functions”. We human’s are ourselves very complex both biologically and psychologically. Yet we want to replicate something we don’t fully understand yet. For me this is where Robotics and AI stands out . With an aspiration of unknown magnitude and a limited understanding, researchers set out to unravel the Human form into Robots.</p>
+
+<p>So I think that should be quite a good intro. I will now move from philosophical things into the technical things. I want these posts to cover a lot of things like <em>Electronics, ML/ DL, Robotics</em>. I will start off with ROS(Robot Operating System) and some small simulations, then move on to some other stuff. So let’s get going.</p>
+
+<h2 id="ros">ROS</h2>
+
+<p>ROS is a pseudo-operating system created to handle complex robots with many functions. ROS provides us with an interface to design modular systems with different functions. ROS is essentially a communication framework. Why ROS? This was the question I asked myself when I couldn’t find my way around ROS. Why? cause ROS lets us communicate between different nodes or codes written in different language for different devices. ROS unifies this process of communication. So let’s start with installing ROS.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/logo_ros.jpg?raw=true" alt="logo_ros" /></p>
+
+<h3 id="installing-ros">Installing ROS</h3>
+
+<p>These instructions are only for Ubuntu 18.04 LTS operating system. You can dual-boot your system or run a virtual machine but prefer the former. We will be using ROS Melodic-Morenia. All the instructions can be found in official <a href="http://wiki.ros.org/melodic/Installation/Ubuntu">ROS website</a>.</p>
+
+<p>Open a terminal and copy paste these sequentially and enter the password when needed. You will get to know everything as we move forward.</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/ros-latest.list'</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt update</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt install ros-melodic-desktop-full</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">echo "source /opt/ros/melodic/setup.bash" &gt;&gt; ~/.bashrc</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">source ~/.bashrc</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt install python-rosdep</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo rosdep init</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">rosdep update</code></p>
+
+<p>So as the installation is out of the way let’s get into core of the ROS.</p>
+
+<h3 id="building-blocks-of-ros">Building Blocks of ROS</h3>
+
+<p>ROS is about sending and receiving data. So it is maintained by three main structures, Nodes, Topics and Messages. The below figure illustrates how these are connected.</p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/core_ros.png?raw=true" alt="image-20210509212618969" /></p>
+
+<ol>
+  <li>
+    <p>ROS NODES : Nodes are simply some code which needs data from other sources or generates data which needs to be sent to other nodes. For example camera is source of images, the raw data from sensor is processed on the camera itself and the image is formed. We now need to send the image to the processor so it can save and modify it. Here camera acts as a Node which sends(publishes) the data(image).</p>
+  </li>
+  <li>
+    <p>ROS MESSAGES : Messages are nothing but data containers. In ROS we have many different types of messages like int, float, image etc. The image data which we need to send from camera acts as a Message of type Image.</p>
+  </li>
+  <li>
+    <p>ROS TOPICS : Topics are message carriers. So every message we send must go through a topic. So the Image message we need to send must go to a topic of some name(let’s say camera_data). So if we need that image we should write down a Node which takes data from this topic.</p>
+  </li>
+</ol>
+
+<p>This brings us to Packages. Packages are simply a self contained project. Packages can be imported into another package and can be used. So the Nodes you write will be inside a package. Packages are self contained so you cannot nest them or add two packages with same name. Collection of different packages is in turn known as Workspace. So all the packages which we need to be working together should be in same workspace.</p>
+
+<p>There are many other important terms like Services, Parameters which will come later into the picture, so they can be introduced later. This essentially forms the core of ROS.</p>
+
+<h3 id="creating-workspace-and-packages">Creating Workspace and Packages</h3>
+
+<p>Let’s start by creating a directory . <code class="language-plaintext highlighter-rouge">mkdir</code> creates a directory and <code class="language-plaintext highlighter-rouge">-p</code> flag specifies that the directory we create is a parent directory.</p>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir -p catkin_ws</code>
+Then move inside that directory is using <code class="language-plaintext highlighter-rouge">cd</code>. Here <code class="language-plaintext highlighter-rouge">cd</code> means change directory.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd catkin_ws</code></p>
+
+<p>Before creating a package we need a directory named <code class="language-plaintext highlighter-rouge">src</code> in the workspace. This is where our packages are managed. 
+<code class="language-plaintext highlighter-rouge">cd catkin_ws</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir src</code></p>
+
+<p>We use <code class="language-plaintext highlighter-rouge">catkin build</code> to manage our packages. This initialises our workspaces and creates a build and devel space for our packages and build them individually if present.</p>
+
+<p><code class="language-plaintext highlighter-rouge">catkin build</code></p>
+
+<p>Then we need to source(setup) our workspace and this needs to be done every time we open the terminal. So to decrease our work we but the command into the bashrc file which runs every time we open a terminal</p>
+
+<p><code class="language-plaintext highlighter-rouge">echo "source ~/catkin_ws/devel/setup.bash" &gt;&gt; ~/.bashrc</code></p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/ws.gif?raw=true" alt="output" /></p>
+
+<p>Now let’s create a package with name <strong>tutorials</strong>. For that we use the following command where <code class="language-plaintext highlighter-rouge">catkin_create_pkg</code> creates the package named <code class="language-plaintext highlighter-rouge">tutorials</code> with dependencies on <code class="language-plaintext highlighter-rouge">geometry_msgs</code> and <code class="language-plaintext highlighter-rouge">rospy</code>. So to create a package we should add the dependencies we require to run the code. Although they can be added and deleted after creating the package by editing <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> and <code class="language-plaintext highlighter-rouge">package.xml</code>.
+<code class="language-plaintext highlighter-rouge">cd catkin_ws/src</code>
+<code class="language-plaintext highlighter-rouge">catkin_create_pkg tutorials geometry_msgs rospy</code></p>
+
+<p>Now we need a <code class="language-plaintext highlighter-rouge">src</code> folder in the package created. Then we need to build the package using the <code class="language-plaintext highlighter-rouge">catkin build</code> similar to the workspace. 
+<code class="language-plaintext highlighter-rouge">mkdir src</code>
+<code class="language-plaintext highlighter-rouge">cd ~/catkin_ws</code>
+<code class="language-plaintext highlighter-rouge">catkin build</code></p>
+
+<p>So we have our package ready to go. We can create a scripts folder inside your package to hold our codes. 
+<code class="language-plaintext highlighter-rouge">cd ~/catkin_ws/src</code>
+<code class="language-plaintext highlighter-rouge">mkdir tutorials/scripts</code></p>
+
+<p><img src="https://github.com/wally1002/tutorials/blob/main/media/package.gif?raw=true" alt="package" /></p>
+
+<p>I think this will be it for this post and let’s look into a simulator called Turtlesim in the next post.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/myBlog/tags/#python" class="page__taxonomy-item" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/myBlog/tags/#robotics" class="page__taxonomy-item" rel="tag">Robotics</a><span class="sep">, </span>
+    
+      <a href="/myBlog/tags/#ros" class="page__taxonomy-item" rel="tag">ROS</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/myBlog/categories/#tech" class="page__taxonomy-item" rel="tag">tech</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-10T00:00:00+05:30">July 10, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=wally1002&text=ROS%20wally1002.github.io%2FmyBlog%2Ftech%2FROS%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=wally1002.github.io%2FmyBlog%2Ftech%2FROS%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=wally1002.github.io%2FmyBlog%2Ftech%2FROS%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/myBlog/tech/Turtlesim/" class="pagination--pager" title="Turtlesim
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/myBlog/assets/images/bat.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myBlog/tech/Movetheturtle/" rel="permalink">Move the turtle
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Move the turtle
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/myBlog/assets/images/bat.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myBlog/tech/Turtlesim/" rel="permalink">Turtlesim
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Turtlesim
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/myBlog/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Sankeerth. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/myBlog/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  </body>
+</html>
