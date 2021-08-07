@@ -22,7 +22,7 @@ subtitle                 : "Travel Ever" # site tagline that appears below site 
 name                     : "Sankeerth"
 description              : "My Blog."
 url                      : "wally1002.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/myBlog"  # the subpath of your site, e.g. "/blog"
+baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "wally1002/minimal-mistakes" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bat.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/bat.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
