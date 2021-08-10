@@ -4,8 +4,8 @@ main:
     url: /about
   - title: "Tech"
     url: /tech/
-  - title: "Cinema"
-    url: /cinema/
+  - title: "Books"
+    url: /books/
   - title: "Cricket"
     url: /cricket/
 

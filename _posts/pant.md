@@ -1,2 +1,0 @@
-### Rishab Pant
-Rishab
