@@ -19,4 +19,4 @@ England have Rejigged their order from 1st test to 2nd where they included Ali t
 
 ​	**India** - Virat Kohli(C), Rohit Sharma, KL Rahul, Pujara, Rahane, Pant(wk), Jadeja, Ashwin/Ishant, Shami, Bumrah, Siraj.
 
-​	**England** - Root(C), Burns, Sibley, Haseed Hameed, Bairstow, Moeen Ali, Buttler(wk), Sam Curran, Overton, Robinson, Anderson.
+​	**England** - Root(C), Burns, Haseed Hameed, Malan, Bairstow, Moeen Ali, Buttler(wk), Sam Curran, Overton, Robinson, Anderson.
